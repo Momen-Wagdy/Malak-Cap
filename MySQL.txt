@@ -1,0 +1,11 @@
+CREATE DATABASE SensorData;
+USE SensorData;
+
+CREATE TABLE readings (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    temperature FLOAT,
+    humidity FLOAT,
+    gas_value INT,
+    flame_value INT
+);
